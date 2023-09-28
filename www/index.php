@@ -23,8 +23,7 @@
     }
 
     .column {
-      padding: 20px;
-      height: 33vh;
+      padding: 30px 20px;
       background-color: #f9f9f9;
       border: 1px solid #ddd;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -76,7 +75,6 @@
       }
 
       .column {
-        height: 33%;
         margin-bottom: 10px;
       }
 
@@ -90,7 +88,7 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="card column">
           <a href="https://www.midshoreconsulting.com/" target="_blank">
             <img src="https://www.midshoreconsulting.com/wp-content/uploads/2020/12/midshore_consulting_logo_377x115.png" alt="Visit Midshore Consulting Limited" class="card-img-top">
@@ -100,7 +98,7 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="card column">
           <a href="https://www.midshoreonlinetraining.com/" target="_blank">
             <img src="https://www.midshoreconsulting.com/wp-content/uploads/2023/09/midshore_online_training.png" alt="Visit Midshore Online Training" class="card-img-top">
@@ -110,7 +108,7 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="card column disabled">
           <a href="#" target="_blank" class="disabled">
             <img src="https://www.midshoreconsulting.com/wp-content/uploads/2023/09/midshore-commpliance-services.png" alt="Midshore Compliance Services" class="card-img-top">
