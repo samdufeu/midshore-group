@@ -19,8 +19,7 @@
 
     .container {
       text-align: center;
-      margin-top: 20px;
-      height: 100vh;
+      height: 95vh;
       display: flex;
       justify-content: center;
       align-items: center;
