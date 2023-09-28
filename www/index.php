@@ -13,6 +13,10 @@
       padding: 20px;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     .container {
       text-align: center;
       margin-top: 20px;
