@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 20px; /* Adding padding to the body */
+    }
+    .container {
+      text-align: center;
+      margin-top: 20px;
+      height: 100vh; /* Set container height to 100% of viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .column {
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      height: 33vh; /* Set default height to 33% of viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #f9f9f9; /* Background color for the column */
+      border: 1px solid #ddd; /* Border for the column */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for the column */
+    }
+    .column::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      right: 0; /* Move the gradient shadow to the right side */
+      height: 10px;
+      width: 100%; /* Adjust the width of the gradient shadow */
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)); /* Gradient shadow */
+    }
+    .column img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 40px; /* Adjust the top position to center vertically */
+      left: 50%; /* Adjust the left position to center horizontally */
+      transform: translate(-50%, -50%); /* Translate to center */
+      font-size: 14px;
+      color: #fff; /* Text color */
+      background-color: #1d96ad; /* Background color for the square */
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    /* Add a class for the disabled effect */
+    .column .disabled img {
+      filter: grayscale(100%) brightness(50%); /* Apply grayscale and reduce brightness */
+      opacity: 0.4;
+    }
+
+    .column.disabled::before {
+      width: 100%; /* Adjust the width of the gradient shadow */
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); /* Gradient shadow with more opacity */
+    }
+
+    /* Override styles for mobile */
+    @media (max-width: 767px) {
+      .column img {max-width:375px;}
+      .column {
+        height: 33%; /* Set height to 33% of viewport height on mobile */
+        margin-bottom:10px;
+      }
+      .container {
+        height: auto; /* Auto height on mobile to fit all columns */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 column">
+        <a href="https://www.midshoreconsulting.com/" target="_blank">
+          <img src="https://www.midshoreconsulting.com/wp-content/uploads/2020/12/midshore_consulting_logo_377x115.png" alt="Visit Midshore Consulting Lim">
+        </a>
+      </div>
+      <div class="col-md-4 column">
+        <a href="https://www.midshoreonlinetraining.com/" target="_blank" alt="Visit Midshore Online Training">
+          <img src="https://www.midshoreconsulting.com/wp-content/uploads/2023/09/midshore_online_training.png" alt="Visit Midshore Online Training">
+        </a>
+      </div>
+      <div class="col-md-4 column disabled">
+        <a href="#" target="_blank" alt="Coming Soon" class="disabled">
+          <img src="https://www.midshoreconsulting.com/wp-content/uploads/2023/09/midshore-commpliance-services.png" alt="Midshore Compliance Services">
+          <div class="overlay-text">Coming Soon</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
