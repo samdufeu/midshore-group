@@ -69,6 +69,11 @@
       margin-top: 10px;
     }
 
+    .disabled img {
+      filter: grayscale(100%) brightness(50%);
+      opacity: 0.4;
+    }
+
     @media (max-width: 767px) {
       .column img {
         max-width: 375px;
